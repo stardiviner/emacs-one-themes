@@ -107,6 +107,11 @@
     variant
     (custom-theme-set-faces
      theme-name
+     ;; font related faces
+     `(underline ((,class (:underline t :background ,contrast-bg))))
+     `(italic ((,class (:slant italic :foreground ,bright))))
+     `(bold ((,class (:weight bold :foreground ,bright))))
+     `(bold-italic ((,class (:weight bold :slant italic :foreground ,bright))))
      ;; Emacs Interface Colors
      `(default ((,class (:foreground ,foreground :background ,background))))
      `(cursor ((,class (:background ,mono1))))
