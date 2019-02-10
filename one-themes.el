@@ -526,6 +526,9 @@
      `(vc-annotate-very-old-color nil)
      `(vc-annotate-background nil)
 
+     ;; hl-sexp
+     `(hl-sexp-face ((,class (:background ,contrast-bg))))
+
      ;; Which Function
      `(which-func ((,class (:foreground ,blue :background nil :weight bold)))))
 
