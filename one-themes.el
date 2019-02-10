@@ -155,12 +155,12 @@
 
      ;; Company
      `(company-tooltip ((,class (:background ,contrast-bg))))
-     `(company-tooltip-selection ((,class (:foreground ,comment :inverse-video t))))
+     `(company-tooltip-selection ((,class (:background ,highlight))))
      `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,red2))))
      `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :foreground ,red2))))
      `(company-tooltip-annotation ((,class (:inherit company-tooltip :foreground ,green))))
      `(company-tooltip-annotation-selection ((,class (:inherit company-tooltip-selection :foreground ,green))))
-     `(company-scrollbar-bg ((,class (:inherit 'company-tooltip :background ,highlight))))
+     `(company-scrollbar-bg ((,class (:inherit company-tooltip :background ,highlight))))
      `(company-scrollbar-fg ((,class (:background ,contrast-bg))))
      `(company-tooltip-search ((,class (:inherit company-tooltip :foreground ,accent))))
      `(company-preview ((,class (:foreground ,comment :background ,contrast-bg))))
