@@ -122,7 +122,7 @@
                                             :weight normal))))
      `(vertical-border ((,class (:foreground ,contrast-bg))))
      `(border ((,class (:background ,contrast-bg :foreground ,highlight))))
-     `(region ((,class (:background ,highlight :inverse-video nil))))
+     `(region ((,class (:background ,mono4 :inverse-video nil))))
      `(secondary-selection ((,class (:background ,highlight))))
      `(mode-line ((,class (:foreground ,foreground :background ,contrast-bg :weight normal
                                        :box (:line-width 1 :color ,contrast-bg)))))
