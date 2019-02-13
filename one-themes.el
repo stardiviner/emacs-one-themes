@@ -124,12 +124,13 @@
      `(border ((,class (:background ,contrast-bg :foreground ,highlight))))
      `(region ((,class (:background ,mono4 :inverse-video nil))))
      `(secondary-selection ((,class (:background ,highlight))))
-     `(mode-line ((,class (:foreground ,foreground :background ,contrast-bg :weight normal
-                                       :box (:line-width 1 :color ,contrast-bg)))))
-     `(mode-line-buffer-id ((,class (:foreground ,mono1 :background nil))))
+     `(mode-line ((,class (:foreground ,foreground :background ,highlight :weight normal
+                                       :box (:line-width 1 :color ,mono4)))))
      `(mode-line-inactive ((,class (:inherit mode-line
-                                             :foreground ,comment
-                                             :background ,highlight :weight normal))))
+                                             :foreground ,comment :background ,low-contrast-bg
+                                             :weight normal
+                                             :box (:line-width 1 :color ,contrast-bg)))))
+     `(mode-line-buffer-id ((,class (:foreground ,mono1 :background nil))))
      `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
      `(mode-line-highlight ((,class (:foreground ,violet :box nil :weight bold))))
      `(match ((,class (:background ,background :foreground ,accent :weight bold))))
