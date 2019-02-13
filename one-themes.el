@@ -478,6 +478,39 @@
      `(org-upcoming-deadline ((,class (:foreground ,orange2  :weight normal :underline nil))))
      `(org-warning ((,class (:foreground ,orange1 :weight normal :underline nil))))
 
+     ;; Calendar
+     `(calendar-month-header ((,class (:foreground ,mono1 :background ,low-contrast-bg
+                                                   :weight bold))))
+     `(calendar-today ((,class (:inherit highlight
+                                         :foreground "green" :background "dark green"
+                                         :weight bold
+                                         :box (:color "green" :line-width -1)))))
+     `(calendar-weekday-header ((,class (:weight bold :foreground "OliveDrab"))))
+     `(calendar-weekend-header ((,class (:weight bold :foreground "GreenYellow"))))
+     `(holiday ((,class (:weight bold :foreground "yellow"))))
+     ;; calfw
+     `(cfw:face-annotation ((,class (:foreground "dark green"))))
+     `(cfw:face-day-title ((,class (:foreground "red" :background ,low-contrast-bg
+                                                :weight bold))))
+     `(cfw:face-default-content ((,class (:foreground ,contrast-bg))))
+     `(cfw:face-default-day ((,class (:weight bold :foreground "dark gray"))))
+     `(cfw:face-disable ((,class (:foreground "light gray" :strike-through t :slant italic))))
+     `(cfw:face-grid ((,class (:foreground "#444444"))))
+     `(cfw:face-header ((,class (:foreground "gray" :weight bold))))
+     `(cfw:face-holiday ((,class (:foreground "orange red"))))
+     `(cfw:face-periods ((,class (:foreground "cyan" :slant italic))))
+     `(cfw:face-saturday ((,class (:foreground "gold" :weight bold))))
+     `(cfw:face-sunday ((,class (:foreground "gold" :weight bold))))
+     `(cfw:face-select ((,class (:foreground "white" :background "steel blue"))))
+     `(cfw:face-title ((,class (:inherit variable-pitch :foreground "dark gray"
+                                         :height 2.0 :weight bold))))
+     `(cfw:face-today ((,class (:foreground ,foreground :background "#404040"))))
+     `(cfw:face-today-title ((,class (:foreground "red" :background ,contrast-bg :weight bold))))
+     `(cfw:face-toolbar ((,class (:foreground "gray"))))
+     `(cfw:face-toolbar-button-off ((,class (:foreground "gray" :weight normal))))
+     `(cfw:face-toolbar-button-on ((,class (:foreground "gray" :weight bold
+                                                        :box (:color "dim gray" :line-width 1)))))
+     
      ;; Parenthesis matching (built-in)
      `(show-paren-match ((,class (:background ,violet :foreground ,background))))
      `(show-paren-mismatch ((,class (:background ,red1 :foreground ,background))))
