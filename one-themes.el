@@ -613,7 +613,16 @@
      `(hl-sexp-face ((,class (:background ,contrast-bg))))
 
      ;; Which Function
-     `(which-func ((,class (:foreground ,blue :background nil :weight bold)))))
+     `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
+
+     ;; mu4e
+     `(mu4e-header-face ((,class (:foreground ,mono4))))
+     `(mu4e-unread-face ((,class (:foreground ,blue))))
+     `(mu4e-header-highlight-face
+       ((,class (:foreground ,mono4 :background ,green :weight bold))))
+     `(mu4e-replied-face ((,class (:foreground ,mono1 :background ,contrast-bg))))
+     `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1))))
+     )
 
     (custom-theme-set-variables
      theme-name
