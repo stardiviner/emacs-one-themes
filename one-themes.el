@@ -124,19 +124,22 @@
      `(border ((,class (:background ,contrast-bg :foreground ,highlight))))
      `(region ((,class (:background ,mono4 :inverse-video nil))))
      `(secondary-selection ((,class (:background ,highlight))))
-     `(mode-line ((,class (:foreground ,foreground :background ,highlight :weight normal
-                                       :box (:line-width 1 :color ,mono4)))))
-     `(mode-line-inactive ((,class (:inherit mode-line
-                                             :foreground ,comment :background ,low-contrast-bg
-                                             :weight normal
-                                             :box (:line-width 1 :color ,contrast-bg)))))
+     `(mode-line
+       ((,class (:foreground ,foreground :background ,highlight :weight normal
+                             :box (:line-width 1 :color ,mono4)))))
+     `(mode-line-inactive
+       ((,class (:inherit mode-line
+                          :foreground ,comment :background ,low-contrast-bg
+                          :weight normal
+                          :box (:line-width 1 :color ,contrast-bg)))))
      `(mode-line-buffer-id ((,class (:foreground ,mono1 :background nil))))
      `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
      `(mode-line-highlight ((,class (:foreground ,violet :box nil :weight bold))))
      `(match ((,class (:background ,background :foreground ,accent :weight bold))))
      `(menu ((,class (:foreground ,blue :background ,background))))
      `(minibuffer-prompt ((,class (:foreground ,blue))))
-     `(header-line ((,class (:inherit mode-line-inactive :foreground ,orange1 :background nil))))
+     `(header-line
+       ((,class (:inherit mode-line-inactive :foreground ,orange1 :background nil))))
 
      ;; Standard font lock faces
      `(font-lock-builtin-face ((,class (:foreground ,mono2))))
@@ -166,9 +169,11 @@
      `(company-tooltip ((,class (:background ,contrast-bg))))
      `(company-tooltip-selection ((,class (:background ,highlight))))
      `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,red2))))
-     `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :foreground ,red2))))
+     `(company-tooltip-common-selection
+       ((,class (:inherit company-tooltip-selection :foreground ,red2))))
      `(company-tooltip-annotation ((,class (:inherit company-tooltip :foreground ,green))))
-     `(company-tooltip-annotation-selection ((,class (:inherit company-tooltip-selection :foreground ,green))))
+     `(company-tooltip-annotation-selection
+       ((,class (:inherit company-tooltip-selection :foreground ,green))))
      `(company-scrollbar-bg ((,class (:inherit company-tooltip :background ,highlight))))
      `(company-scrollbar-fg ((,class (:background ,contrast-bg))))
      `(company-tooltip-search ((,class (:inherit company-tooltip :foreground ,accent))))
@@ -255,8 +260,8 @@
      `(helm-buffer-size ((,class (:foreground ,foreground))))
      `(helm-candidate-number ((,class (:foreground ,mono2 :bold t))))
      `(helm-selection ((,class (:background ,highlight :foreground ,mono2))))
-     `(helm-selection-line ((,class (:background ,highlight :foreground ,mono2
-                                                 :underline nil))))
+     `(helm-selection-line
+       ((,class (:background ,highlight :foreground ,mono2 :underline nil))))
      `(helm-separator ((,class (:foreground ,red1))))
      `(helm-source-header ((,class (:background ,blue :foreground ,background
                                                 :underline nil :bold t))))
@@ -300,7 +305,8 @@
 
      ;; Ledger
      `(ledger-font-comment-face ((,class (:inherit font-lock-comment-face))))
-     `(ledger-font-occur-narrowed-face ((,class (:inherit font-lock-comment-face :invisible t))))
+     `(ledger-font-occur-narrowed-face
+       ((,class (:inherit font-lock-comment-face :invisible t))))
      `(ledger-font-occur-xact-face ((,class (:inherit highlight))))
      `(ledger-font-payee-cleared-face ((,class (:foreground ,green))))
      `(ledger-font-payee-uncleared-face ((,class (:foreground ,red1))))
@@ -321,11 +327,12 @@
      `(lsp-ui-doc-header ((,class (:background ,blue :foreground ,background))))
      `(lsp-ui-doc-url ((,class (:inherit link :foreground ,blue))))
      `(lsp-ui-sideline-code-action ((,class (:foreground ,orange2))))
-     `(lsp-ui-sideline-current-symbol ((,class (:foreground ,foreground :weight bold
-                                                            :height 0.99
-                                                            :box (:line-width -1 :color ,foreground)))))
-     `(lsp-ui-sideline-symbol ((,class (:foreground ,foreground :height 0.99
-                                                    :box (:line-width -1 :color ,foreground)))))
+     `(lsp-ui-sideline-current-symbol
+       ((,class (:foreground ,foreground :weight bold :height 0.99
+                             :box (:line-width -1 :color ,foreground)))))
+     `(lsp-ui-sideline-symbol
+       ((,class (:foreground ,foreground :height 0.99
+                             :box (:line-width -1 :color ,foreground)))))
 
      ;; Magit
     ;;;; Headings
@@ -334,12 +341,13 @@
      `(magit-section-heading-selection ((t (:foreground ,orange1 :weight bold))))
      `(magit-diff-file-heading ((t (:weight bold))))
      `(magit-diff-file-heading-highlight ((t (:background ,contrast-bg))))
-     `(magit-diff-file-heading-selection ((t (:background ,contrast-bg
-                                                          :foreground ,orange1))))
+     `(magit-diff-file-heading-selection
+       ((t (:background ,contrast-bg :foreground ,orange1))))
      `(magit-diff-hunk-heading ((t (:background ,highlight :foreground ,mono2))))
-     `(magit-diff-hunk-heading-highlight ((t (:background ,highlight :foreground ,mono1 :weight bold))))
-     `(magit-diff-hunk-heading-selection ((t (:background ,contrast-bg :foreground ,orange1
-                                                          :weight bold))))
+     `(magit-diff-hunk-heading-highlight
+       ((t (:background ,highlight :foreground ,mono1 :weight bold))))
+     `(magit-diff-hunk-heading-selection
+       ((t (:background ,contrast-bg :foreground ,orange1 :weight bold))))
 
     ;;;; Diffs
      `(magit-diff-base ((t (:foreground ,background :background ,orange1))))
@@ -412,7 +420,8 @@
 
      ;; Markdown
      `(markdown-blockquote-face ((,class (:inherit font-lock-doc-face))))
-     `(markdown-code-face ((,class (:inherit fixed-pitch :background ,background :foreground ,violet))))
+     `(markdown-code-face
+       ((,class (:inherit fixed-pitch :background ,background :foreground ,violet))))
      `(markdown-comment-face ((,class (:foreground ,comment :strike-through t))))
      `(markdown-footnote-face ((,class (:inherit default))))
      `(markdown-header-delimiter-face ((,class (:foreground ,comment))))
@@ -439,12 +448,14 @@
      `(org-agenda-calendar-event ((,class (:foreground ,comment))))
      `(org-agenda-calendar-sexp ((,class (:foreground ,mono4 :slant italic))))
      `(org-agenda-diary ((,class (:foreground ,mono4 :slant italic))))
-     `(org-agenda-date ((,class (:background ,background :foreground ,blue :weight normal
-                                             :box (:line-width 2 :color ,background)
-                                             :inverse-video nil :overline nil :underline nil))))
-     `(org-agenda-date-weekend ((,class (:inherit org-agenda-date :inverse-video nil :background unspecified
-                                                  :foreground ,blue :weight unspecified
-                                                  :underline t :overline nil :box unspecified))))
+     `(org-agenda-date
+       ((,class (:background ,background :foreground ,blue :weight normal
+                             :box (:line-width 2 :color ,background)
+                             :inverse-video nil :overline nil :underline nil))))
+     `(org-agenda-date-weekend
+       ((,class (:inherit org-agenda-date :inverse-video nil :background unspecified
+                          :foreground ,blue :weight unspecified
+                          :underline t :overline nil :box unspecified))))
      `(org-agenda-date-today
        ((,class (:inherit org-agenda-date :inverse-video t :weight bold
                           :underline unspecified :overline nil :box unspecified
@@ -465,14 +476,13 @@
      `(org-example ((,class (:background ,contrast-bg))))
      `(org-quote ((,class (:background ,highlight))))
      `(org-verse ((,class (:background ,mono4))))
-     `(org-checkbox ((,class (:background ,background :foreground ,foreground
-                                          :box (:line-width 1 :style released-button)))))
-     `(org-checkbox-statistics-todo ((,class (:background ,low-contrast-bg
-                                                          :foreground ,mono3
-                                                          :box (:line-width 1)))))
-     `(org-checkbox-statistics-done ((,class (:background ,background
-                                                          :foreground ,mono4
-                                                          :box (:line-width 1)))))
+     `(org-checkbox
+       ((,class (:background ,background :foreground ,foreground
+                             :box (:line-width 1 :style released-button)))))
+     `(org-checkbox-statistics-todo
+       ((,class (:background ,low-contrast-bg :foreground ,mono3 :box (:line-width 1)))))
+     `(org-checkbox-statistics-done
+       ((,class (:background ,background :foreground ,mono4 :box (:line-width 1)))))
      `(org-code ((,class (:foreground ,cyan))))
      `(org-verbatim ((,class (:foreground ,blue))))
      `(org-latex-and-related ((,class (:foreground ,blue :background ,contrast-bg))))
@@ -484,9 +494,8 @@
      `(org-headline-done ((,class (:foreground ,contrast-bg))))
      `(org-clock-overlay ((,class (:background ,blue))))
      `(org-hide ((,class (:foreground ,background))))
-     `(org-level-1 ((,class (:background ,low-contrast-bg
-                                         :weight bold :height 130
-                                         :foreground ,orange1))))
+     `(org-level-1
+       ((,class (:background ,low-contrast-bg :weight bold :height 130 :foreground ,orange1))))
      `(org-level-2 ((,class (:inherit org-level-1 :foreground ,green))))
      `(org-level-3 ((,class (:inherit org-level-1 :foreground ,blue))))
      `(org-level-4 ((,class (:inherit org-level-1 :foreground ,red1))))
@@ -515,27 +524,28 @@
      `(org-todo ((,class (:foreground ,red2 :weight bold))))
      `(org-number-of-items ((,class (:foreground ,orange1))))
      `(org-upcoming-deadline ((,class (:foreground ,red2  :weight normal :underline nil))))
-     `(org-warning ((,class (:foreground ,red1 :weight normal :slant italic :underline nil))))
+     `(org-warning
+       ((,class (:foreground ,red1 :weight normal :slant italic :underline nil))))
      `(org-macro ((,class (:foreground ,orange2 :weight bold :underline t))))
      `(org-target ((,class (:foreground ,blue :weight bold))))
 
      ;; Calendar
-     `(calendar-month-header ((,class (:foreground ,mono1 :background ,low-contrast-bg
-                                                   :weight bold))))
-     `(calendar-today ((,class (:inherit highlight
-                                         :foreground "green" :background "dark green"
-                                         :weight bold
-                                         :box (:color "green" :line-width -1)))))
+     `(calendar-month-header
+       ((,class (:foreground ,mono1 :background ,low-contrast-bg :weight bold))))
+     `(calendar-today
+       ((,class (:inherit highlight :foreground "green" :background "dark green"
+                          :weight bold :box (:color "green" :line-width -1)))))
      `(calendar-weekday-header ((,class (:weight bold :foreground "OliveDrab"))))
      `(calendar-weekend-header ((,class (:weight bold :foreground "GreenYellow"))))
      `(holiday ((,class (:weight bold :foreground "yellow"))))
      ;; calfw
      `(cfw:face-annotation ((,class (:foreground "dark green"))))
-     `(cfw:face-day-title ((,class (:foreground "red" :background ,low-contrast-bg
-                                                :weight bold))))
+     `(cfw:face-day-title
+       ((,class (:foreground "red" :background ,low-contrast-bg :weight bold))))
      `(cfw:face-default-content ((,class (:foreground ,contrast-bg))))
      `(cfw:face-default-day ((,class (:weight bold :foreground "dark gray"))))
-     `(cfw:face-disable ((,class (:foreground "light gray" :strike-through t :slant italic))))
+     `(cfw:face-disable
+       ((,class (:foreground "light gray" :strike-through t :slant italic))))
      `(cfw:face-grid ((,class (:foreground "#444444"))))
      `(cfw:face-header ((,class (:foreground "gray" :weight bold))))
      `(cfw:face-holiday ((,class (:foreground "orange red"))))
@@ -543,14 +553,15 @@
      `(cfw:face-saturday ((,class (:foreground "gold" :weight bold))))
      `(cfw:face-sunday ((,class (:foreground "gold" :weight bold))))
      `(cfw:face-select ((,class (:foreground "white" :background "steel blue"))))
-     `(cfw:face-title ((,class (:inherit variable-pitch :foreground "dark gray"
-                                         :height 2.0 :weight bold))))
+     `(cfw:face-title
+       ((,class (:inherit variable-pitch :foreground "dark gray" :height 2.0 :weight bold))))
      `(cfw:face-today ((,class (:foreground ,foreground :background "#404040"))))
-     `(cfw:face-today-title ((,class (:foreground "red" :background ,contrast-bg :weight bold))))
+     `(cfw:face-today-title
+       ((,class (:foreground "red" :background ,contrast-bg :weight bold))))
      `(cfw:face-toolbar ((,class (:foreground "gray"))))
      `(cfw:face-toolbar-button-off ((,class (:foreground "gray" :weight normal))))
-     `(cfw:face-toolbar-button-on ((,class (:foreground "gray" :weight bold
-                                                        :box (:color "dim gray" :line-width 1)))))
+     `(cfw:face-toolbar-button-on
+       ((,class (:foreground "gray" :weight bold :box (:color "dim gray" :line-width 1)))))
      
      ;; Parenthesis matching (built-in)
      `(show-paren-match ((,class (:background ,violet :foreground ,background))))
@@ -569,7 +580,8 @@
      `(rainbow-delimiters-depth-10-face ((,class (:foreground ,violet))))
      `(rainbow-delimiters-depth-11-face ((,class (:foreground ,green))))
      `(rainbow-delimiters-depth-12-face ((,class (:foreground ,red1))))
-     `(rainbow-delimiters-depth-unmatched-face ((,class (:foreground ,foreground :inverse-video t))))
+     `(rainbow-delimiters-depth-unmatched-face
+       ((,class (:foreground ,foreground :inverse-video t))))
 
      ;; Spaceline
      `(spaceline-evil-emacs ((,class (:background ,accent :foreground ,background))))
