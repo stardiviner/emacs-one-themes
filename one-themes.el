@@ -422,7 +422,14 @@
      `(magit-reflog-rebase       ((t (:foreground ,red1))))
      `(magit-reflog-cherry-pick  ((t (:foreground ,green))))
      `(magit-reflog-remote       ((t (:foreground ,cyan))))
-     `(magit-reflog-other ((t (:foreground ,cyan))))
+     `(magit-reflog-other        ((t (:foreground ,cyan))))
+
+     ;; git-gutter
+     `(git-gutter+-added ((t (:foreground ,green))))
+     `(git-gutter+-separator ((t (:foreground ,cyan))))
+     `(git-gutter+-deleted ((t (:foreground ,red1))))
+     `(git-gutter+-modified ((t (:foreground ,violet))))
+     `(git-gutter+-unchanged ((t (:foreground ,orange2))))
 
      ;; Markdown
      `(markdown-blockquote-face ((,class (:inherit font-lock-doc-face))))
