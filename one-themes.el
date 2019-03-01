@@ -319,6 +319,12 @@
      `(ledger-occur-narrowed-face ((,class (:inherit font-lock-comment-face :invisible t))))
      `(ledger-occur-xact-face ((,class (:inherit highlight))))
 
+     ;; bm
+     `(bm-face ((,class (:inherit highlight))))
+     `(bm-fringe-face ((,class (:background ,orange1))))
+     `(bm-fringe-persistent-face ((,class (:background ,blue))))
+     `(bm-persistent-face ((,class (:background ,blue))))
+
      ;; LSP
      `(lsp-face-highlight-read ((,class (:background ,red1 :foreground ,background))))
      `(lsp-face-highlight-textual ((,class (:background ,orange1 :foreground ,background))))
