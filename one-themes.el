@@ -652,6 +652,7 @@
        ((,class (:foreground ,mono4 :background ,green :weight bold))))
      `(mu4e-replied-face ((,class (:foreground ,mono1 :background ,contrast-bg))))
      `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1))))
+     `(mu4e-header-mark-face ((,class (:foreground ,cyan))))
      )
 
     (custom-theme-set-variables
