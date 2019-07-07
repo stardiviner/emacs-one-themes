@@ -577,9 +577,13 @@
        ((,class (:foreground "gray" :weight bold :box (:color "dim gray" :line-width 1)))))
      ;; cal-china-x
      `(cal-china-x-general-holidy-face
-       ((,class (:background ,green :weight bold :box (:color ,cyan :line-width 1)))))
+       ((,class (:inherit nil :inverse-video nil
+                          :foreground ,red1
+                          :weight bold :box (:color ,contrast-bg :line-width -1)))))
      `(cal-china-x-important-holidy-face
-       ((,class (:background ,red2 :weight bold :box (:color ,red1 :line-width 1)))))
+       ((,class (:inherit nil :inverse-video nil
+                          :foreground ,red2
+                          :weight bold :box (:color ,red1 :line-width -1)))))
      
      ;; Parenthesis matching (built-in)
      `(show-paren-match ((,class (:background ,violet :foreground ,background))))
