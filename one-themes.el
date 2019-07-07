@@ -163,7 +163,7 @@
      `(error ((,class (:foreground ,red2))))
      `(warning ((,class (:foreground ,orange1))))
      `(tooltip ((,class (:foreground ,orange2 :background ,background :inverse-video t))))
-     `(link ((,class (:foreground nil :underline "GreenYellow"))))
+     `(link ((,class (:foreground nil :underline "DarkGrey"))))
 
      ;; Company
      `(company-tooltip ((,class (:background ,contrast-bg))))
