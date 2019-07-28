@@ -299,6 +299,9 @@
      `(helm-bookmark-w3m ((,class (:foreground ,orange1))))
      `(helm-bookmarks-su ((,class (:foreground ,orange2))))
 
+     ;; Ivy
+     ;; `(ivy-current-match ((,class (:weight bold))))
+
      ;; Isearch
      `(isearch ((,class (:foreground ,background :background ,red1 :weight normal))))
      `(isearch-fail ((,class (:foreground ,orange2 :background ,background :bold t))))
@@ -642,6 +645,9 @@
          (360 . ,green)))
      `(vc-annotate-very-old-color nil)
      `(vc-annotate-background nil)
+
+     ;; hl-line-mode
+     `(hl-line ((,class (:background ,contrast-bg :foreground nil))))
 
      ;; hl-sexp
      `(hl-sexp-face ((,class (:background ,contrast-bg))))
