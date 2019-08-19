@@ -461,8 +461,8 @@
      `(org-document-info ((,class (:foreground ,mono4))))
      `(org-document-info-keyword ((,class (:foreground ,blue))))
      `(org-agenda-structure ((,class (:foreground ,blue))))
-     `(org-agenda-calendar-event ((,class (:foreground ,comment))))
-     `(org-agenda-calendar-sexp ((,class (:foreground ,mono4 :slant italic))))
+     `(org-agenda-calendar-event ((,class (:foreground ,mono1))))
+     `(org-agenda-calendar-sexp ((,class (:foreground ,mono3 :slant italic))))
      `(org-agenda-diary ((,class (:foreground ,mono4 :slant italic))))
      `(org-agenda-date
        ((,class (:background ,background :foreground ,blue :weight normal
