@@ -542,7 +542,7 @@
      `(org-upcoming-deadline ((,class (:foreground ,red2  :weight normal :underline nil))))
      `(org-warning
        ((,class (:foreground ,red1 :weight normal :slant italic :underline nil))))
-     `(org-macro ((,class (:foreground ,orange2 :weight bold :underline t))))
+     `(org-macro ((,class (:foreground ,cyan :weight bold :underline t))))
      `(org-target ((,class (:foreground ,blue :weight bold))))
 
      ;; Calendar
