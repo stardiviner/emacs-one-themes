@@ -122,8 +122,8 @@
                                             :weight normal))))
      `(vertical-border ((,class (:foreground ,contrast-bg))))
      `(border ((,class (:background ,contrast-bg :foreground ,highlight))))
-     `(region ((,class (:background ,mono4 :inverse-video nil))))
-     `(secondary-selection ((,class (:background ,highlight))))
+     `(region ((,class (:background ,mono4 :inverse-video nil :extend t))))
+     `(secondary-selection ((,class (:background ,highlight :extend t))))
      `(mode-line
        ((,class (:foreground ,foreground :background ,highlight :weight normal
                              :box (:line-width 1 :color ,mono4)))))
@@ -207,7 +207,7 @@
      `(diredp-file-name ((,class (:foreground ,orange2))))
      `(diredp-file-suffix ((,class (:foreground ,green))))
      `(diredp-flag-mark ((,class (:foreground ,green :inverse-video t))))
-     `(diredp-flag-mark-line ((,class (:background nil :inherit highlight))))
+     `(diredp-flag-mark-line ((,class (:background nil :inherit highlight :extend t))))
      `(diredp-ignored-file-name ((,class (:foreground ,comment))))
      `(diredp-link-priv ((,class (:background nil :foreground ,violet))))
      `(diredp-mode-line-flagged ((,class (:foreground ,red2))))
@@ -221,8 +221,8 @@
      `(diredp-write-priv ((,class (:foreground ,orange1 :background nil))))
 
      ;; Ediff
-     `(ediff-fine-diff-A ((,class (:background ,red1 :foreground ,mono4))))
-     `(ediff-fine-diff-B ((,class (:background ,green :foreground ,mono4))))
+     `(ediff-fine-diff-A ((,class (:background ,red1 :foreground ,mono4 :extend t))))
+     `(ediff-fine-diff-B ((,class (:background ,green :foreground ,mono4 :extend t))))
      `(ediff-even-diff-A ((,class (:background ,highlight :foreground ,mono1))))
      `(ediff-odd-diff-A ((,class (:background  ,fringe :foreground ,mono1))))
      `(ediff-even-diff-B ((,class (:background ,highlight :foreground ,mono1))))
@@ -264,7 +264,7 @@
        ((,class (:background ,highlight :foreground ,mono2 :underline nil))))
      `(helm-separator ((,class (:foreground ,red1))))
      `(helm-source-header ((,class (:background ,blue :foreground ,background
-                                                :underline nil :bold t))))
+                                                :underline nil :bold t :extend t))))
      `(helm-visible-mark ((,class (:foreground ,violet :bold t))))
 
      ;; Helm Buffers
@@ -345,11 +345,11 @@
 
      ;; Magit
     ;;;; Headings
-     `(magit-section-highlight ((t (:inherit contrast-bg))))
+     `(magit-section-highlight ((t (:inherit contrast-bg :extend t))))
      `(magit-section-heading ((t (:foreground ,orange2 :weight bold))))
      `(magit-section-heading-selection ((t (:foreground ,orange1 :weight bold))))
      `(magit-diff-file-heading ((t (:weight bold))))
-     `(magit-diff-file-heading-highlight ((t (:background ,contrast-bg))))
+     `(magit-diff-file-heading-highlight ((t (:background ,contrast-bg :extend t))))
      `(magit-diff-file-heading-selection
        ((t (:background ,contrast-bg :foreground ,orange1))))
      `(magit-diff-hunk-heading ((t (:background ,highlight :foreground ,mono2))))
@@ -360,14 +360,14 @@
 
     ;;;; Diffs
      `(magit-diff-base ((t (:foreground ,background :background ,orange1))))
-     `(magit-diff-base-highlight ((t (:foreground ,orange1 :background ,highlight))))
+     `(magit-diff-base-highlight ((t (:foreground ,orange1 :background ,highlight :extend t))))
      `(magit-diff-added ((t (:foreground ,green))))
-     `(magit-diff-added-highlight ((t (:foreground ,green :background ,contrast-bg))))
+     `(magit-diff-added-highlight ((t (:foreground ,green :background ,contrast-bg :extend t))))
      `(magit-diff-removed ((t (:foreground ,red2))))
-     `(magit-diff-removed-highlight ((t (:foreground ,red2 :background ,contrast-bg))))
-     `(magit-diff-lines-heading ((t (:background ,orange2 :foreground ,background))))
+     `(magit-diff-removed-highlight ((t (:foreground ,red2 :background ,contrast-bg :extend t))))
+     `(magit-diff-lines-heading ((t (:background ,orange2 :foreground ,background :extend t))))
      `(magit-diff-context ((t (:foreground ,mono2))))
-     `(magit-diff-context-highlight ((t (:foreground ,mono2 :background ,contrast-bg))))
+     `(magit-diff-context-highlight ((t (:foreground ,mono2 :background ,contrast-bg :extend t))))
      `(magit-diffstat-added ((t (:foreground ,green))))
      `(magit-diffstat-removed ((t (:foreground ,red2))))
 
@@ -457,7 +457,7 @@
 
      ;; Org Mode
      `(org-default ((,class (:inherit default))))
-     `(org-document-title ((,class (:height 170 :foreground ,blue))))
+     `(org-document-title ((,class (:height 170 :foreground ,blue :extend t))))
      `(org-document-info ((,class (:foreground ,mono4))))
      `(org-document-info-keyword ((,class (:foreground ,blue))))
      `(org-agenda-structure ((,class (:foreground ,blue))))
@@ -476,22 +476,22 @@
        ((,class (:inherit org-agenda-date :inverse-video t :weight bold
                           :underline unspecified :overline nil :box unspecified
                           :foreground ,blue :background ,background))))
-     `(org-agenda-done ((,class (:foreground ,mono4 :slant italic))))
-     `(org-agenda-dimmed-todo-face ((,class (:foreground ,low-contrast-bg))))
-     `(org-archived ((,class (:foreground ,comment :weight normal :strike-through t))))
-     `(org-agenda-clocking ((,class (:foreground ,comment :background ,cyan))))
+     `(org-agenda-done ((,class (:foreground ,mono4 :slant italic :extend t))))
+     `(org-agenda-dimmed-todo-face ((,class (:foreground ,low-contrast-bg :extend t))))
+     `(org-archived ((,class (:foreground ,comment :weight normal :strike-through t :extend t))))
+     `(org-agenda-clocking ((,class (:foreground ,comment :background ,cyan :extend t))))
      `(org-agenda-column-dateline ((,class (:foreground ,cyan))))
      `(org-agenda-current-time ((,class (:foreground ,comment :background ,cyan))))
      `(org-agenda-filter-category ((,class (:foreground ,orange1))))
      `(org-agenda-filter-tags ((,class (:foreground ,orange1))))
      `(org-agenda-restriction-lock ((,class (:foreground ,orange2))))
-     `(org-block ((,class (:inherit fixed-pitch :background ,low-contrast-bg))))
-     `(org-block-background ((,class (:inherit fixed-pitch :background ,low-contrast-bg))))
-     `(org-block-begin-line ((,class (:foreground ,mono2 :background ,contrast-bg))))
-     `(org-block-end-line ((,class (:foreground ,mono2 :background ,contrast-bg))))
-     `(org-example ((,class (:background ,contrast-bg))))
-     `(org-quote ((,class (:background ,highlight))))
-     `(org-verse ((,class (:background ,mono4))))
+     `(org-block ((,class (:inherit fixed-pitch :background ,low-contrast-bg :extend t))))
+     `(org-block-background ((,class (:inherit fixed-pitch :background ,low-contrast-bg :extend t))))
+     `(org-block-begin-line ((,class (:foreground ,mono2 :background ,contrast-bg :extend t))))
+     `(org-block-end-line ((,class (:foreground ,mono2 :background ,contrast-bg :extend t))))
+     `(org-example ((,class (:background ,contrast-bg :extend t))))
+     `(org-quote ((,class (:background ,highlight :extend t))))
+     `(org-verse ((,class (:background ,mono4 :extend t))))
      `(org-checkbox
        ((,class (:background ,background :foreground ,foreground
                              :box (:line-width 1 :style released-button)))))
@@ -508,10 +508,10 @@
      `(org-ellipsis ((,class (:foreground ,comment))))
      `(org-formula ((,class (:foreground ,orange2))))
      `(org-headline-done ((,class (:foreground ,contrast-bg))))
-     `(org-clock-overlay ((,class (:background ,blue))))
+     `(org-clock-overlay ((,class (:background ,blue :extend t))))
      `(org-hide ((,class (:foreground ,background))))
      `(org-level-1
-       ((,class (:background ,low-contrast-bg :weight bold :height 130 :foreground ,orange1))))
+       ((,class (:background ,low-contrast-bg :weight bold :height 130 :foreground ,orange1 :extend t))))
      `(org-level-2 ((,class (:inherit org-level-1 :foreground ,green))))
      `(org-level-3 ((,class (:inherit org-level-1 :foreground ,blue))))
      `(org-level-4 ((,class (:inherit org-level-1 :foreground ,red1))))
@@ -523,7 +523,7 @@
      `(org-meta-line-clock ((,class (:foreground ,cyan))))
      `(org-meta-line-clock-overrun ((,class (:foreground ,red2 :slant italic))))
      `(org-property-value ((,class (:foreground ,mono2))))
-     `(org-drawer ((,class (:foreground ,comment))))
+     `(org-drawer ((,class (:foreground ,comment :extend t))))
      `(org-list-dt ((,class (:foreground ,blue))))
      `(org-link ((,class (:foreground ,blue :underline t))))
      `(org-footnote ((,class (:foreground ,green))))
@@ -647,10 +647,10 @@
      `(vc-annotate-background nil)
 
      ;; hl-line-mode
-     `(hl-line ((,class (:background ,contrast-bg :foreground nil))))
+     `(hl-line ((,class (:background ,contrast-bg :foreground nil :extend t))))
 
      ;; hl-sexp
-     `(hl-sexp-face ((,class (:background ,contrast-bg))))
+     `(hl-sexp-face ((,class (:background ,contrast-bg :extend t))))
 
      ;; Which Function
      `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
@@ -659,9 +659,9 @@
      `(mu4e-header-face ((,class (:foreground ,mono4))))
      `(mu4e-unread-face ((,class (:foreground ,blue))))
      `(mu4e-header-highlight-face
-       ((,class (:foreground ,mono4 :background ,green :weight bold))))
-     `(mu4e-replied-face ((,class (:foreground ,mono1 :background ,contrast-bg))))
-     `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1))))
+       ((,class (:foreground ,mono4 :background ,green :weight bold :extend t))))
+     `(mu4e-replied-face ((,class (:foreground ,mono1 :background ,contrast-bg :extend t))))
+     `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1 :extend t))))
      `(mu4e-header-mark-face ((,class (:foreground ,cyan))))
      )
 
