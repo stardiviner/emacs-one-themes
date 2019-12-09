@@ -587,6 +587,12 @@
        ((,class (:inherit nil :inverse-video nil
                           :foreground ,red2
                           :weight bold :box (:color ,red1 :line-width -1)))))
+
+     `(elfeed-read-face ((,class (:foreground "#444444"))))
+     `(elfeed-search-title-face ((,class (:foreground "#444444"))))
+     `(elfeed-unread-face ((,class (:foreground " gray" :weight bold))))
+     `(elfeed-search-unread-title-face ((,class (:foreground "gray" :weight bold))))
+     `(elfeed-search-filter-face ((,class (:foreground "gray"))))
      
      ;; Parenthesis matching (built-in)
      `(show-paren-match ((,class (:background ,violet :foreground ,background))))
