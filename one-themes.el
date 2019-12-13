@@ -666,7 +666,7 @@
      `(mu4e-unread-face ((,class (:foreground ,blue))))
      `(mu4e-header-highlight-face
        ((,class (:foreground ,mono4 :background ,green :weight bold :extend t))))
-     `(mu4e-replied-face ((,class (:foreground ,mono1 :background ,contrast-bg :extend t))))
+     `(mu4e-replied-face ((,class (:foreground ,background :background ,orange1 :extend t))))
      `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1 :extend t))))
      `(mu4e-header-mark-face ((,class (:foreground ,cyan))))
      )
