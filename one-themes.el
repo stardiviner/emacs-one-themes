@@ -165,6 +165,12 @@
      `(tooltip ((,class (:foreground ,orange2 :background ,background :inverse-video t))))
      `(link ((,class (:foreground nil :underline "DarkGrey"))))
 
+     ;; Edebug
+
+     ;; edebug-x
+     `(hi-edebug-x-stop ((,class (:background "DarkMagenta" :extend t))))
+     `(hi-edebug-x-debug-line ((,class (:background "DarkSlateGray" :extend t))))
+     
      ;; Company
      `(company-tooltip ((,class (:background ,contrast-bg))))
      `(company-tooltip-selection ((,class (:background ,highlight))))
