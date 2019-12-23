@@ -513,7 +513,8 @@
      `(org-inlinetask ((,class (:weight bold :foreground ,orange1))))
      `(org-ellipsis ((,class (:foreground ,comment))))
      `(org-formula ((,class (:foreground ,orange2))))
-     `(org-headline-done ((,class (:foreground ,contrast-bg))))
+     `(org-headline-done ((,class (:foreground ,contrast-bg :strike-through t))))
+     ;; `(org-headline-todo ((,class (:weight bold :foreground ,orange1 :background ,low-contrast-bg))))
      `(org-clock-overlay ((,class (:background ,blue :extend t))))
      `(org-hide ((,class (:foreground ,background))))
      `(org-level-1
