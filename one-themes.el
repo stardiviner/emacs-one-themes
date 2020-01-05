@@ -306,7 +306,12 @@
      `(helm-bookmarks-su ((,class (:foreground ,orange2))))
 
      ;; Ivy
-     ;; `(ivy-current-match ((,class (:weight bold))))
+     `(ivy-current-match ((,class (:foreground nil :background ,mono4))))
+     `(ivy-minibuffer-match-highlight ((,class (:background ,highlight))))
+     `(ivy-minibuffer-match-face-1 ((,class (:underline "dim gray"))))
+     `(ivy-minibuffer-match-face-2 ((,class (:overline ,green))))
+     `(ivy-minibuffer-match-face-3 ((,class (:underline ,red2))))
+     `(ivy-minibuffer-match-face-4 ((,class (:overline ,orange1))))
 
      ;; Isearch
      `(isearch ((,class (:foreground ,background :background ,red1 :weight normal))))
