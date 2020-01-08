@@ -173,7 +173,7 @@
      
      ;; Company
      `(company-tooltip ((,class (:background ,contrast-bg))))
-     `(company-tooltip-selection ((,class (:background ,highlight))))
+     `(company-tooltip-selection ((,class (:background ,highlight :extend t))))
      `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,red2))))
      `(company-tooltip-common-selection
        ((,class (:inherit company-tooltip-selection :foreground ,red2))))
@@ -187,6 +187,13 @@
      `(company-preview-common ((,class (:inherit company-preview :foreground ,red2))))
      `(company-preview-search ((,class (:inherit company-preview :foreground ,blue))))
      `(company-echo-common ((,class (:inherit company-echo :foreground ,red2))))
+
+     ;; company-box
+     `(company-box-background ((,class (:inherit company-tooltip :background ,contrast-bg))))
+     `(company-box-candidate ((,class (:foreground "white"))))
+     `(company-box-annotation ((,class (:inherit company-tooltip-annotation))))
+     `(company-box-selection ((,class (:inherit company-tooltip-selection))))
+     `(company-box-scrollbar ((,class (:inherit company-scrollbar-bg))))
 
      ;; Dired
      `(dired-directory ((,class (:foreground ,blue :weight normal))))
