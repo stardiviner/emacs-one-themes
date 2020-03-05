@@ -551,7 +551,7 @@
      `(org-scheduled-previously ((,class (:foreground ,cyan))))
      `(org-scheduled-today ((,class (:foreground ,blue :weight normal))))
      `(org-special-keyword ((,class (:foreground ,comment :weight bold))))
-     `(org-table ((,class (:foreground ,mono1))))
+     `(org-table ((,class (:foreground ,mono1 :background ,low-contrast-bg))))
      `(org-column ((,class (:foreground ,mono4))))
      `(org-column-title ((,class (:foreground ,mono2))))
      `(org-tag ((,class (:weight bold))))
