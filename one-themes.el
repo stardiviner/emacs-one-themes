@@ -114,7 +114,7 @@
      `(bold-italic ((,class (:weight bold :slant italic :foreground ,bright))))
      ;; Emacs Interface Colors
      `(default ((,class (:foreground ,foreground :background ,background))))
-     `(cursor ((,class (:background ,mono1))))
+     `(cursor ((,class (:background ,green))))
      `(fringe ((,class (:background ,low-contrast-bg :foreground ,fringe))))
      `(linum ((,class (:background ,background :foreground ,comment :italic nil :underline nil))))
      `(highlight ((,class (:background ,contrast-bg))))
