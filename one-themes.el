@@ -684,10 +684,10 @@
      `(mu4e-header-face ((,class (:foreground ,mono4))))
      `(mu4e-unread-face ((,class (:foreground ,blue))))
      `(mu4e-header-highlight-face
-       ((,class (:foreground ,mono4 :background ,green :weight bold :extend t))))
-     `(mu4e-replied-face ((,class (:foreground ,background :background ,orange1 :extend t))))
-     `(mu4e-flagged-face ((,class (:foreground ,background :background ,red1 :extend t))))
-     `(mu4e-header-mark-face ((,class (:foreground ,cyan))))
+       ((,class (:foreground ,mono4 :background ,cyan :weight bold :extend t))))
+     `(mu4e-replied-face ((,class (:foreground ,background :background ,mono3 :extend t))))
+     `(mu4e-flagged-face ((,class (:foreground ,background :background ,red2 :extend t))))
+     `(mu4e-header-mark-face ((,class (:foreground ,blue))))
      )
 
     (custom-theme-set-variables
