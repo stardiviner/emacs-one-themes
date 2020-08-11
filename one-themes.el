@@ -172,11 +172,11 @@
      `(hi-edebug-x-debug-line ((,class (:background "DarkSlateGray" :extend t))))
      
      ;; Company
-     `(company-tooltip ((,class (:background ,contrast-bg))))
-     `(company-tooltip-selection ((,class (:background ,highlight :extend t))))
-     `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,red2))))
+     `(company-tooltip ((,class (:background ,contrast-bg :foreground ,mono1))))
+     `(company-tooltip-selection ((,class (:background ,highlight :foreground ,bright :extend t))))
+     `(company-tooltip-common ((,class (:inherit company-tooltip :background ,contrast-bg))))
      `(company-tooltip-common-selection
-       ((,class (:inherit company-tooltip-selection :foreground ,red2))))
+       ((,class (:inherit company-tooltip-selection :foreground ,blue))))
      `(company-tooltip-annotation ((,class (:inherit company-tooltip :foreground ,green))))
      `(company-tooltip-annotation-selection
        ((,class (:inherit company-tooltip-selection :foreground ,green))))
@@ -190,7 +190,7 @@
 
      ;; company-box
      `(company-box-background ((,class (:inherit company-tooltip :background ,contrast-bg))))
-     `(company-box-candidate ((,class (:foreground "white"))))
+     `(company-box-candidate ((,class (:foreground ,mono1))))
      `(company-box-annotation ((,class (:inherit company-tooltip-annotation))))
      `(company-box-selection ((,class (:inherit company-tooltip-selection))))
      `(company-box-scrollbar ((,class (:inherit company-scrollbar-bg))))
