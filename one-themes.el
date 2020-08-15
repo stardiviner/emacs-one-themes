@@ -563,6 +563,8 @@
        ((,class (:foreground ,red1 :weight normal :slant italic :underline nil))))
      `(org-macro ((,class (:foreground ,cyan :weight bold :underline t))))
      `(org-target ((,class (:foreground ,blue :weight bold))))
+     `(org-mode-line-clock ((,class (:foreground ,mono1))))
+     `(org-mode-line-clock-overrun ((,class (:foreground ,orange2))))
 
      ;; Calendar
      `(calendar-month-header
